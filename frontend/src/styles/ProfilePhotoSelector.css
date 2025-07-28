@@ -1,0 +1,80 @@
+/* ProfilePhotoSelector.css */
+
+.profile-photo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 0.8rem;
+}
+
+/* Hidden input */
+.hidden-input {
+  display: none;
+}
+
+/* Placeholder when no image is selected */
+.upload-placeholder {
+  width: 90px;
+  height: 90px;
+  background-color: #fce7f3; /* pastel pink */
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.user-icon {
+  font-size: 32px;
+  color: #ec4899;
+}
+
+.upload-button {
+  position: absolute;
+  bottom: -6px;
+  right: -6px;
+  background-color: #ec4899;
+  color: white;
+  border-radius: 999px;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Preview image */
+.image-preview {
+  position: relative;
+}
+
+.preview-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Remove image button */
+.remove-button {
+  position: absolute;
+  bottom: -6px;
+  right: -6px;
+  background-color: #f87171; /* red-400 */
+  color: white;
+  border-radius: 999px;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}

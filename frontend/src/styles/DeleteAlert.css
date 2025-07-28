@@ -1,0 +1,12 @@
+.alert-description {
+  font-size: 0.875rem;
+  color: #333;
+  margin-top: 0.5rem;
+}
+
+.alert-action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  gap: 0.75rem;
+}

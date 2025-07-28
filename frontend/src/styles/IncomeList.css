@@ -1,0 +1,71 @@
+/* incomeList.css */
+.income-page .income-card {
+  width: 100%;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(229, 231, 235, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-sizing: border-box;
+  margin-top: 1rem;
+}
+
+.income-page .income-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.income-page .income-card h5 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.income-page .income-card-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 12px;
+  font-weight: 500;
+  color: #374151;
+  background-color: transparent;
+  border: 1px solid rgba(229, 231, 235, 0.5);
+  border-radius: 0.5rem;
+  padding: 0.375rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.income-page .income-card-btn:hover {
+  background-color: #f5f3ff;
+}
+
+.income-page .income-card-btn svg {
+  font-size: 1rem;
+}
+
+.income-page .income-t-card {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .income-page .income-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .income-page .income-card {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .income-page .income-card-btn {
+    font-size: 0.75rem;
+    padding: 0.375rem 0.75rem;
+  }
+}

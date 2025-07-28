@@ -1,0 +1,31 @@
+/* Home.css */
+
+.dashboard-wrapper {
+  margin: 1.25rem auto; /* my-5 mx-auto */
+  padding: 0 1rem;
+}
+
+.dashboard-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .dashboard-stats-grid {
+    grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+  }
+}
+
+.dashboard-components-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .dashboard-components-grid {
+    grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
+  }
+}

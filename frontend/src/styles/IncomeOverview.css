@@ -1,0 +1,65 @@
+.income-page .income-overview-wrapper {
+  width: 100%;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(229, 231, 235, 0.5);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.income-page .income-overview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.income-page .heading {
+  font-size: larger;
+  font-weight: 500;
+  margin-bottom: -0.8rem;
+}
+
+.income-page .income-overview-para {
+  margin-top: 1rem;
+  font-size: small;
+  color: rgb(120, 114, 114);
+}
+
+.income-page .add-icon {
+  font-size: 1.125rem;
+}
+
+.income-page .income-overview-chart {
+  min-height: 300px;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .income-page .income-overview-wrapper {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+
+  .income-page .income-overview-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .income-page .heading {
+    font-size: 1rem;
+  }
+
+  .income-page .income-overview-para {
+    font-size: 0.75rem;
+  }
+}

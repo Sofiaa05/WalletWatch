@@ -1,0 +1,113 @@
+.auth-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  margin-top: -2rem;
+}
+
+
+.auth-container {
+  width: 100%;
+  padding: 2rem 3rem;
+  background-color: #f6ddea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+.logo {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 3.3rem;
+  align-self: flex-start;
+  z-index: 1;
+  border-radius: 10px ;
+}
+
+/* Initially hidden on mobile */
+.auth-image {
+  display: none;
+}
+
+/* Responsive: Tablet and above */
+@media (min-width: 768px) {
+  .auth-layout {
+    flex-direction: row;
+    background-color: #e851ae3c;
+  }
+
+  .auth-container {
+    width: 60%;
+    min-height: 100vh;
+  }
+
+  .auth-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+    padding: 2rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .auth-image-card {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    margin-top: auto;
+    margin-bottom: 5rem;
+    z-index: 1;
+    border-radius: 10px;
+  }
+}
+
+/* Stats Info Card Styling */
+.stats-info-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.9rem;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  width: 90%;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.stats-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  background-color: #ec4899;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.stats-label {
+  font-size: 0.875rem;
+  color: #141518;
+  margin-bottom: 0.25rem;
+  word-break: break-word;
+}
+
+.stats-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  word-break: break-word;
+}
+
+/* Utility */
+.bg-primary {
+  background-color: #ec4899;
+}

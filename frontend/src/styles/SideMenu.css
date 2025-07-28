@@ -1,0 +1,69 @@
+.side-menu {
+  width: 16rem;              /* w-64 */
+  height: calc(100vh - 61px);
+  top: 61px;
+  background-color: #f6ddea;
+  border-right: 1px solid #e5e7eb; /* border-gray-200 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  overflow-y: auto; 
+  position: fixed;              
+  z-index: 10; 
+  left: 0;
+   scroll-behavior: smooth;
+} 
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0rem;
+  margin-bottom: 0rem;
+  margin-top: 1rem;
+}
+
+.profile img {
+  width: 5rem;      /* w-20 */
+  height: 5rem;     /* h-20 */
+  background-color: #94a3b8;  /* bg-slate-400 */
+  border-radius: 9999px;      /* rounded-full */
+  object-fit: cover;
+  margin-top: 1rem;
+}
+
+.profile-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0f172a;   /* text-gray-950 */
+  line-height: 1.5rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+.menu-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 15px;
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  color: black;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.menu-button.active {
+  color: white;
+  background-color: #e44293;  /* primary (example purple) */
+  margin-left: 1rem;
+}
+
+.menu-icon {
+  font-size: 1.25rem; /* adjust as needed */
+}

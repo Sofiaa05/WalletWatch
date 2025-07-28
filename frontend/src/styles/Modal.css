@@ -1,0 +1,76 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.modal-wrapper {
+  width: 100%;
+  max-width: 640px; /* Similar to Tailwind's max-w-2xl */
+  padding: 1rem;
+  position: relative;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  padding: 1rem;
+  padding-top: 0.5rem;
+  margin: auto;
+  max-height: 90vh;        /* Keeps modal inside viewport */
+  overflow-y: auto;        /* Scroll inside modal */
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.modal-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.modal-close-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close-icon {
+  width: 16px;
+  height: 16px;
+  color: #9ca3af;
+}
+
+.modal-close-btn:hover .modal-close-icon {
+  color: #111827;
+}
+
+.modal-body {
+  padding: 1rem;
+}
+
+

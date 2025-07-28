@@ -1,0 +1,44 @@
+.signup-container {
+  width: 100%;
+  max-width: 70%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10rem;
+  margin-top: -1rem;
+}
+
+.signup-title {
+  font-size: 1.25rem;           /* text-xl */
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 0.25rem;
+}
+
+.signup-subtitle {
+  font-size: 0.875rem;          /* text-xs */
+  color: #475569;               /* slate-700 */
+  margin-top: 0.3125rem;
+  margin-bottom: 1.5rem;
+}
+
+.error-message {
+  color: #ef4444;               /* red-500 */
+  font-size: 0.8rem;           /* text-xs */
+  padding-bottom: 0rem;     /* pb-2.5 */
+  margin: 0.5rem;
+}
+
+
+.signup-footer {
+  font-size: 0.9rem;         /* text-[13px] */
+  color: #1e293b;               /* slate-800 */
+  margin-top: 0.75rem;
+}
+
+.login-link {
+  color: #ec4899;               /* text-primary */
+  font-weight: 500;
+  text-decoration: underline;
+}

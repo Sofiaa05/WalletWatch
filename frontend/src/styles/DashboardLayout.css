@@ -1,0 +1,33 @@
+/* Container for layout */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  margin-left: -1rem;
+}
+
+/* Sidebar hidden on small screens (mobile) */
+.hide-on-small {
+  display: block;
+}
+
+@media (max-width: 1080px) {
+  .hide-on-small {
+    display: none;
+  }
+
+  .grow-margin {
+    margin-left: 0 !important; /* Remove side margin on small screen */
+  }
+}
+
+/* Content area that grows and accounts for sidebar */
+.grow-margin {
+  flex-grow: 1;
+  padding: 1.5rem;
+  margin-top: 4.5rem;                    /* For fixed navbar */
+  margin-left: calc(16rem + 2rem);       /* For sidebar width + gap */
+  min-width: 0;                          /* Prevent overflow when zoomed in */
+  box-sizing: border-box;
+  overflow-x: hidden;
+}

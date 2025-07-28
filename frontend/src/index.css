@@ -1,0 +1,79 @@
+
+:root {
+  --font-display: 'Poppins', sans-serif;
+  --breakpoint-3xl: 1920px;
+  --color-primary: #ec4899;
+}
+
+/* Base Layer */
+html {
+  font-family: var(--font-display);
+}
+
+body {
+  background-color: #ec489a17;
+  overflow: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.btn-primary {
+  width: 92%;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  background-color: #e44293;
+  box-shadow: 0 4px 12px rgba(246, 92, 238, 0.2);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  margin: 1rem 1rem 1rem 0rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #d33e88;
+  color: #ede9fe;
+}
+
+.add-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem; /* Equivalent to gap-1.5 */
+  font-size: 0.75rem; /* Equivalent to text-xs */
+  font-weight: 600; /* font-medium */
+  color: #e44293; /* text-purple-600 */
+  white-space: nowrap;
+  background-color: #e4429346; /* bg-purple-50 */
+  border: 1px solid #f355a458; /* border-purple-100 */
+  border-radius: 0.5rem; /* rounded-lg */
+  cursor: pointer;
+  padding:0.5rem;
+}
+
+@media (min-width: 768px) {
+  .add-btn {
+    font-size: 0.875rem; /* text-sm */
+  }
+}
+
+.add-btn:active{
+  background-color: #e4429359;
+}
+
+.add-btn:hover{
+  background-color: #e4429359;
+}
+
+/* Universal layout wrapper
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+} */
+

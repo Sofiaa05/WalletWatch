@@ -1,0 +1,21 @@
+.finance-overview-container {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(229, 231, 235, 0.5); /* gray-200/50 */
+  margin: 1rem 0 1rem 1rem;
+}
+
+.finance-overview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.finance-overview-title {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600;
+  color: #111827; /* gray-900 */
+}
