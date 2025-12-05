@@ -11,9 +11,12 @@ const {protect} = require("../middlewares/authMiddleware.js");
 
 const router = express.Router();
 
+const { getSpendingInsights } = require("../controllers/expenseController");
+
 router.post('/add', protect, addExpense);
 router.get('/get', protect, getAllExpense);
 router.get('/downloadexcel', protect, downloadExpenseExcel);
 router.delete('/delete/:id', protect, deleteExpense);
+router.get("/ai-insights", protect, getSpendingInsights);
 
 module.exports = router;

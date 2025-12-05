@@ -1,6 +1,5 @@
 const User = require('../models/User'); 
 const jwt = require('jsonwebtoken');
-const bcrypt = require("bcryptjs");
 
 const generateToken = (userId) => {
   return jwt.sign({ id: userId }, process.env.JWT_SECRET, {
@@ -10,7 +9,7 @@ const generateToken = (userId) => {
 
 //register user. This function should create a new user in the database and return a JWT token.
 exports.registerUser = async (req, res) => {
-  console.log("req.body:", req.body); // 👈 Add this temporarily
+  console.log("req.body:", req.body); // Add this temporarily
   // Destructure the request body to get user details
   const {fullname, email, password, profileImageUrl} = req.body || {};
 
@@ -60,7 +59,7 @@ exports.loginUser = async (req, res) => {
     const user = await User.findOne({email});
 
     if(!user) {
-      return res.status(400).json({message: "Invalid credentials"});
+      return res.status(401).json({message: "Invalid credentials"});
     }
     //password match
     const isMatch = await user.comparePassword(password);
